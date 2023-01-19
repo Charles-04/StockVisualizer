@@ -30,9 +30,6 @@ namespace StockVisualizer.BLL.Implementation
 
             var property = properties.Split(",");
 
-
-
-
             dynamic productinfo = new ExpandoObject();
 
             foreach (var item in ProductDB.Stock)
@@ -50,20 +47,13 @@ namespace StockVisualizer.BLL.Implementation
                     {
                         if (prop.ToLower() == props.Key.ToLower())
                         {
-                            Console.WriteLine($"{props.Key} :  {props.Value}");
+                            Console.WriteLine($"{props.Key} \t : \t  {props.Value}");
                         }
-                       
-
+                    
                     }
 
                 }
             }
-
-
-
-           
-
-
         }
 
     }

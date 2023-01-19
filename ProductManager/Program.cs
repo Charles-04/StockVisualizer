@@ -5,9 +5,7 @@ namespace ProductManager
     {
         static void Main(string[] args)
         {
-            StockDisplayer stockDisplayer = new();
-
-            stockDisplayer.DisplayProducts("id,name,price");
+            ProductManagerUI.Run();
         }
     }
 }
