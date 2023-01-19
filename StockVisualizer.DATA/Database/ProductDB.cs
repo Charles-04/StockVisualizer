@@ -4,13 +4,13 @@ using System.Text;
 using StockVisualizer.DATA.Model;
 namespace StockVisualizer.DATA.Database
 {
-    public class ProductDB
+    public static class ProductDB
     {
-        public List<Product> Stock = new List<Product>()
+        public static List<Product> Stock = new List<Product>()
         {
-            new Product("PD001", "Reading Table", 7, 2, 20000) { },
-            new Product("PD002", "Reading Lamp", 7, 2, 30000) { },
-            new Product("PD003", "Monitor Desk", 7, 2, 56000) { },
+            new Product("PD001", "Reading Table", 7,"goods",3, 20000) { },
+            new Product("PD002", "Reading Lamp", 7, "goods", 3,30000) { },
+            new Product("PD003", "Monitor Desk", 7, "goods", 3,56000) { },
 
         };
        

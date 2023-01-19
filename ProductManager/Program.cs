@@ -1,10 +1,13 @@
-﻿namespace ProductManager
+﻿using StockVisualizer.BLL.Implementation;
+namespace ProductManager
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            StockDisplayer stockDisplayer = new();
+
+            stockDisplayer.DisplayProducts("id,name,price");
         }
     }
 }

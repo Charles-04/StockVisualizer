@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\StockVisualizer.BLL\StockVisualizer.BLL.csproj" />
+  </ItemGroup>
+
 </Project>
